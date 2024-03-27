@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const form = document.getElementById("cost-form");
+  const generateButton = document.querySelector('button[type="submit"]');
 
-  form.addEventListener("submit", function (event) {
-    event.preventDefault(); // Prevent the form from submitting
+  generateButton.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default form submission
 
     // Get selected values
     const engineSize = parseInt(document.getElementById("engine-size").value);
