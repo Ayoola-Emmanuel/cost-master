@@ -11,13 +11,14 @@
   <body>
     <header>
       <h1>Cost Master</h1>
+      <!-- <img src="logo.jpeg" alt="logo"> -->
     </header>
     <form id="cost-form">
       <label for="engine-size">Engine size:</label>
       <select id="engine-size">
-        <option value="4">4-cylinder</option>
-        <option value="6">6-cylinder</option>
-        <option value="8">8-cylinder</option>
+        <option value="4">4 - cylinder</option>
+        <option value="6">6 - cylinder</option>
+        <option value="8">8 - cylinder</option>
       </select>
       <br />
       <label for="make">Make:</label>
@@ -27,14 +28,14 @@
         <!-- Add more options as needed -->
       </select>
       <br />
-      <label for="import-duty">Import duty:</label>
+      <label for="import-duty">Import Duty:</label>
       <select id="import-duty">
         <option value="US">US</option>
         <option value="Canada">Canada</option>
         <option value="Mexico">Mexico</option>
       </select>
       <br />
-      <label for="manufacture-date">Date of manufacture:</label>
+      <label for="manufacture-date">Date of Manufacture:</label>
       <input type="date" id="manufacture-date" />
       <br />
       <label for="facility-ac">
@@ -47,9 +48,9 @@
     <input type="checkbox" id="facility-open-roof" />
   </label>
   <br>
-  <button type="submit">Calculate cost</button>
+  <button type="submit">Calculate</button>
   <br>
-  <label for="cost">Cost:</label>
+  <label id="cost-label" for="cost">Cost:</label>
   <output id="cost"></output>
     </form>
     <script src="script.js" async defer></script>
