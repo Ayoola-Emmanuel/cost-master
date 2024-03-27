@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Cost Master</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cost Master</h1>
+    </header>
+    <form id="cost-form">
+      <label for="engine-size">Engine size:</label>
+      <select id="engine-size">
+        <option value="4">4-cylinder</option>
+        <option value="6">6-cylinder</option>
+        <option value="8">8-cylinder</option>
+      </select>
+      <br />
+      <label for="make">Make:</label>
+      <select id="make">
+        <option value="Toyota">Toyota</option>
+        <option value="Lexus">Lexus</option>
+        <!-- Add more options as needed -->
+      </select>
+      <br />
+      <label for="import-duty">Import duty:</label>
+      <select id="import-duty">
+        <option value="US">US</option>
+        <option value="Canada">Canada</option>
+        <option value="Mexico">Mexico</option>
+      </select>
+      <br />
+      <label for="manufacture-date">Date of manufacture:</label>
+      <input type="date" id="manufacture-date" />
+      <br />
+      <label for="facility-ac">
+    <span>A/C ($1,000)</span>
+    <input type="checkbox" id="facility-ac" />
+  </label>
+  <br>
+  <label for="facility-open-roof">
+    <span>Open roof ($2,000)</span>
+    <input type="checkbox" id="facility-open-roof" />
+  </label>
+  <br>
+  <button type="submit">Calculate cost</button>
+  <br>
+  <label for="cost">Cost:</label>
+  <output id="cost"></output>
+    </form>
+    <script src="script.js" async defer></script>
+  </body>
+</html>
