@@ -16,7 +16,6 @@ form {
 }
 
 label,
-input,
 select,
 output {
   display: block;
@@ -26,14 +25,21 @@ output {
 
 select,
 input[type="date"] {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
   padding: 10px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
+input[type="date"] {
+  width: 95%;
+}
+
 input[type="checkbox"] {
-  margin: 10px 0;
+  margin: 1px 40px;
   vertical-align: middle;
 }
 
