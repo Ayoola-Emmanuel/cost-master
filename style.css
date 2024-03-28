@@ -27,7 +27,7 @@ img {
   }
   
   img {
-    display: block; /* Ensure the image is displayed as a block element */
+    display: flex; /* Ensure the image is displayed as a block element */
     /* margin: 10px auto; */
     margin-left: 5px;
     margin-top: 25px;
