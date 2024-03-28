@@ -29,8 +29,8 @@ img {
   img {
     display: block; /* Ensure the image is displayed as a block element */
     /* margin: 10px auto; */
-    margin-left: 10px;
-    margin-top: 15px;
+    margin-left: 5px;
+    margin-top: 25px;
     width: 40px; /* Adjust image size for smaller screens */
     height: 40px;
   }
