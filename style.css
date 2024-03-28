@@ -21,6 +21,19 @@ img {
   left: 300px;
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+  
+  img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 10px auto; /* Center the image horizontally */
+    width: 40px; /* Adjust image size for smaller screens */
+    height: 40px;
+  }
+}
+
 form {
   font-family: roboto;
   position: relative;
@@ -165,9 +178,14 @@ select option:hover {
 
 #cost-label, #cost {
   position: relative;
-  left: 325px;
+  left: 225px;
 }
 
 #cost {
-  margin-left: 10px;
+  margin-right: 460px;
+}
+
+.cost-bar {
+  display: flex;
+  flex-direction: row;
 }
