@@ -1,7 +1,7 @@
 body {
   background-color: #009688;
-  background-image: linear-gradient(to bottom right, #ffffff 25%, #009688);
-  height: 180vh;
+  background-image: linear-gradient(to bottom right, #ffffff 50%, #009688 ); /* Adjusted gradient */
+  height: auto;
 }
 
 header {
@@ -12,6 +12,7 @@ header {
   font-family: calibri;
   font-size: 1.8rem;
   position: fixed;
+  width: auto;
 }
 
 img {
@@ -63,16 +64,10 @@ input[type="date"] {
 }
 
 input[type="date"]:focus {
-  outline: none; /* Remove default focus outline */
-  border-color: #009688; /* Border color when focused */
-  box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Box shadow when focused */
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 5px rgba(0, 150, 136, 0.5);
 }
-
-/* Style the select when it's hovered */
-input[type="date"]:hover {
-  border-color: #009688; /* Border color when hovered */
-}
-
 
 input[type="checkbox"] {
   margin: 1px 40px;
@@ -80,9 +75,9 @@ input[type="checkbox"] {
 }
 
 label span {
-  display: inline-block; /* Make the span element inline-block */
-  vertical-align: middle; /* Align the span vertically with checkbox */
-  margin-bottom: 5px; /* Adjust the spacing between checkbox and text */
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 5px;
 }
 
 button {
@@ -96,7 +91,7 @@ button {
   height: 60px;
   transition: background-color 0.2s ease-in-out;
   display: block;
-  margin: 20px auto 10px; /* Centralize button vertically and horizontally */
+  margin: 20px auto 10px;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -128,47 +123,64 @@ output {
   height: 20px;
 }
 
-
-/* Style the select element */
 select {
   padding: 8px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
-  background-color: #fff; /* Background color for the select */
-  color: #333; /* Text color for the select */
+  background-color: #fff;
+  color: #333;
 }
 
-/* Style the options in the dropdown */
 select option {
-  background-color: #f8f8f8; /* Background color for options */
-  color: #333; /* Text color for options */
+  background-color: #f8f8f8;
+  color: #333;
   padding: 8px;
 }
 
-/* Style the select when it's focused */
 select:focus {
-  outline: none; /* Remove default focus outline */
-  border-color: #009688; /* Border color when focused */
-  box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Box shadow when focused */
+  outline: none;
+  border-color: #009688;
+  box-shadow: 0 0 5px rgba(0, 150, 136, 0.5);
 }
 
-/* Style the select when it's hovered */
-select:hover {
-  border-color: #009688; /* Border color when hovered */
-}
-
-/* Style the select when an option is hovered */
-select option:hover {
-  background-color: #e0e0e0; /* Background color for hovered option */
-}
-
-#cost-label, #cost {
+#cost-label,
+#cost {
   position: relative;
   left: 325px;
 }
 
 #cost {
   margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  header {
+    margin-left: 50px;
+    width: auto;
+  }
+
+  img {
+    left: 300px;
+  }
+
+  form {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  img {
+    left: 75%;
+  }
+
+  form {
+    width: 90%;
+  }
 }
