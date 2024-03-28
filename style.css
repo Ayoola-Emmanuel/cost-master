@@ -29,7 +29,7 @@ img {
   img {
     display: block; /* Ensure the image is displayed as a block element */
     margin: 10px auto; /* Center the image horizontally */
-    margin-left: 50px;
+    margin-left: 20px;
     width: 40px; /* Adjust image size for smaller screens */
     height: 40px;
   }
