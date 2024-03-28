@@ -1,7 +1,6 @@
 body {
-  background-color: #009688;
-  background-image: linear-gradient(to bottom right, #ffffff 25%, #009688);
-  height: 180vh;
+  background-color: #d0eae7;
+  height: 100%;
 }
 
 header {
