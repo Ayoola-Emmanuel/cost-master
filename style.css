@@ -30,7 +30,8 @@ img {
     display: block; /* Ensure the image is displayed as a block element */
     /* margin: 10px auto; */
     margin-left: 5px;
-    margin-top: 25px;
+    position: relative;
+    top: 0;
     width: 40px; /* Adjust image size for smaller screens */
     height: 40px;
   }
