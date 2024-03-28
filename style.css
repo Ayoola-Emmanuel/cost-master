@@ -85,7 +85,7 @@ label span {
 }
 
 button {
-  background-color: #009688;
+  background-color: #30a396;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -101,7 +101,7 @@ button {
 }
 
 button:hover {
-  background-color: #013f39;
+  background-color: #14736a;
 }
 
 button:active {
