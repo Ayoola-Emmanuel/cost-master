@@ -6,15 +6,21 @@
     <title>Cost Master</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Linking external stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Linking favicon -->
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
   </head>
   <body>
+    <!-- Header section -->
     <header>
       <h1>Cost Master</h1>
+      <!-- Logo image -->
       <img src="image.png" alt="logo">
     </header>
+    <!-- Form for cost calculation -->
     <form id="cost-form">
+      <!-- Dropdown for selecting engine size -->
       <label for="engine-size">Engine size:</label>
       <select id="engine-size">
         <option value="4">4 - cylinder</option>
@@ -22,6 +28,7 @@
         <option value="8">8 - cylinder</option>
       </select>
       <br />
+      <!-- Dropdown for selecting car make -->
       <label for="make">Make:</label>
       <select id="make">
         <option value="Toyota">Toyota</option>
@@ -29,6 +36,7 @@
         <!-- Add more options as needed -->
       </select>
       <br />
+      <!-- Dropdown for selecting import duty -->
       <label for="import-duty">Import Duty:</label>
       <select id="import-duty">
         <option value="US">US</option>
@@ -36,30 +44,37 @@
         <option value="Mexico">Mexico</option>
       </select>
       <br />
+      <!-- Input field for selecting date of manufacture -->
       <label for="manufacture-date">Date of Manufacture:</label>
       <input type="date" id="manufacture-date" />
       <br />
+      <!-- Checkbox for selecting A/C facility -->
       <label for="facility-ac">
-    <span>A/C ($1,000)</span>
-    <input type="checkbox" id="facility-ac" />
-  </label>
-  <br>
-  <label for="facility-open-roof">
-    <span>Open roof ($2,000)</span>
-    <input type="checkbox" id="facility-open-roof" />
-  </label>
-  <br>
-  <button type="submit">Calculate</button>
-  <br>
-  <div class="cost-bar">
-  <label id="cost-label" for="cost">Cost:</label>
-  <output id="cost"></output>
-</div>
+        <span>A/C ($1,000)</span>
+        <input type="checkbox" id="facility-ac" />
+      </label>
+      <br>
+      <!-- Checkbox for selecting open roof facility -->
+      <label for="facility-open-roof">
+        <span>Open roof ($2,000)</span>
+        <input type="checkbox" id="facility-open-roof" />
+      </label>
+      <br>
+      <!-- Button to trigger cost calculation -->
+      <button type="submit">Calculate</button>
+      <br>
+      <!-- Output section to display cost -->
+      <div class="cost-bar">
+        <label id="cost-label" for="cost">Cost:</label>
+        <output id="cost"></output>
+      </div>
     </form>
-    <!-- Copyright notice added here -->
+    <!-- Footer section -->
     <footer>
+      <!-- Copyright notice -->
       <p>&copy; Cost Master 2024 by Ayoola & Seyi</p>
     </footer>
+    <!-- Linking external JavaScript file -->
     <script src="script.js"></script>
   </body>
 </html>
