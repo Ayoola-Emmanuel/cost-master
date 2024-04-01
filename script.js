@@ -1,10 +1,13 @@
+// Wait for the DOM content to be fully loaded before executing JavaScript
 document.addEventListener("DOMContentLoaded", function () {
+  // Find the submit button in the form
   const generateButton = document.querySelector('button[type="submit"]');
 
+  // Add click event listener to the submit button
   generateButton.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
-    // Get selected values
+    // Get selected values from the form
     const engineSize = parseInt(document.getElementById("engine-size").value);
     const importDuty = document.getElementById("import-duty").value;
     const manufactureDate = new Date(
@@ -16,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     const make = document.getElementById("make").value;
 
-    // Calculate the total cost based on the selected options
+    // Calculate the total cost based on selected options
     let totalCost = calculateTotalCost(
       engineSize,
       importDuty,
@@ -30,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Function to calculate the total cost
 function calculateTotalCost(
   engineSize,
   importDuty,
@@ -39,16 +43,16 @@ function calculateTotalCost(
 ) {
   let baseCost = 0;
 
-  // Base cost based on engine size
+  // Determine the base cost based on engine size
   switch (engineSize) {
     case 4:
-      baseCost += 20000; // Example base cost for 4-cylinder
+      baseCost += 20000; // Example base cost for 4-cylinder engine
       break;
     case 6:
-      baseCost += 25000; // Example base cost for 6-cylinder
+      baseCost += 25000; // Example base cost for 6-cylinder engine
       break;
     case 8:
-      baseCost += 30000; // Example base cost for 8-cylinder
+      baseCost += 30000; // Example base cost for 8-cylinder engine
       break;
   }
 
@@ -90,5 +94,5 @@ function calculateTotalCost(
     // Add more cases for other car makes as needed
   }
 
-  return baseCost;
+  return baseCost; // Return the total calculated cost
 }
