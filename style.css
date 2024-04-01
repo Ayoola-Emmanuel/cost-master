@@ -1,8 +1,10 @@
+/* Setting background color for the body */
 body {
   background-color: #d0eae7;
   height: 100%;
 }
 
+/* Styling for header section */
 header {
   color: #333;
   padding: 5px 0;
@@ -10,17 +12,19 @@ header {
   margin-left: 50px;
   font-family: calibri;
   font-size: 1.8rem;
-  position: fixed;
+  position: fixed; /* Fixing the header position */
 }
 
+/* Styling for logo image */
 img {
   width: 50px;
   height: 50px;
-  position: relative;
-  top: -95px;
-  left: 300px;
+  position: relative; /* Positioning the image */
+  top: -95px; /* Adjusting the image position */
+  left: 300px; /* Adjusting the image position */
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   header {
     font-size: 1.5rem; /* Adjust font size for smaller screens */
@@ -28,19 +32,19 @@ img {
   
   img {
     display: flex; /* Ensure the image is displayed as a block element */
-    /* margin: 10px auto; */
-    margin-left: 0px;
-    margin-top: 35px;
+    margin-left: 0px; /* Adjusting margin for smaller screens */
+    margin-top: 35px; /* Adjusting margin for smaller screens */
     width: 40px; /* Adjust image size for smaller screens */
-    height: 40px;
+    height: 40px; /* Adjust image size for smaller screens */
   }
 }
 
+/* Styling for form */
 form {
   font-family: roboto;
   position: relative;
-  top: 125px;
-  margin: 0 auto;
+  top: 125px; /* Adjusting position */
+  margin: 0 auto; /* Centering the form horizontally */
   width: 600px;
   padding: 20px;
   background-color: #f8f8f8;
@@ -48,11 +52,13 @@ form {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for labels */
 label {
   font-weight: 600;
   font-size: 1.3rem;
 }
 
+/* Styling for labels, select, and output elements */
 label,
 select,
 output {
@@ -61,6 +67,7 @@ output {
   width: 100%;
 }
 
+/* Styling for select and input[type="date"] elements */
 select,
 input[type="date"] {
   display: block;
@@ -72,33 +79,32 @@ input[type="date"] {
   border-radius: 10px;
 }
 
+/* Additional styling for input[type="date"] */
 input[type="date"] {
   width: 97%;
 }
 
+/* Styling for input[type="date"] when focused */
 input[type="date"]:focus {
   outline: none; /* Remove default focus outline */
   border-color: #009688; /* Border color when focused */
   box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Box shadow when focused */
 }
 
-/* Style the select when it's hovered */
-input[type="date"]:hover {
-  border-color: #009688; /* Border color when hovered */
-}
-
-
+/* Styling for checkboxes */
 input[type="checkbox"] {
   margin: 1px 40px;
   vertical-align: middle;
 }
 
+/* Styling for labels accompanying checkboxes */
 label span {
   display: inline-block; /* Make the span element inline-block */
   vertical-align: middle; /* Align the span vertically with checkbox */
   margin-bottom: 5px; /* Adjust the spacing between checkbox and text */
 }
 
+/* Styling for button */
 button {
   background-color: #30a396;
   border: none;
@@ -115,19 +121,23 @@ button {
   font-weight: 600;
 }
 
+/* Hover effect for button */
 button:hover {
   background-color: #14736a;
 }
 
+/* Active effect for button */
 button:active {
   background-color: #c2bbbb;
 }
 
+/* Styling for output element */
 output {
   font-weight: bold;
   font-size: 20px;
 }
 
+/* Styling for A/C checkbox */
 #facility-ac {
   position: absolute;
   left: 555px;
@@ -135,6 +145,7 @@ output {
   height: 20px;
 }
 
+/* Styling for open roof checkbox */
 #facility-open-roof {
   position: absolute;
   left: 555px;
@@ -142,8 +153,7 @@ output {
   height: 20px;
 }
 
-
-/* Style the select element */
+/* Styling for select element */
 select {
   padding: 8px;
   font-size: 16px;
@@ -154,46 +164,48 @@ select {
   color: #333; /* Text color for the select */
 }
 
-/* Style the options in the dropdown */
+/* Styling for options in the dropdown */
 select option {
   background-color: #f8f8f8; /* Background color for options */
   color: #333; /* Text color for options */
   padding: 8px;
 }
 
-/* Style the select when it's focused */
+/* Styling for select when focused */
 select:focus {
   outline: none; /* Remove default focus outline */
   border-color: #009688; /* Border color when focused */
   box-shadow: 0 0 5px rgba(0, 150, 136, 0.5); /* Box shadow when focused */
 }
 
-/* Style the select when it's hovered */
+/* Styling for select when hovered */
 select:hover {
   border-color: #009688; /* Border color when hovered */
 }
 
-/* Style the select when an option is hovered */
+/* Styling for options in the dropdown when hovered */
 select option:hover {
   background-color: #e0e0e0; /* Background color for hovered option */
 }
 
+/* Styling for cost label and output */
 #cost-label, #cost {
   position: relative;
-  left: 225px;
+  left: 225px; /* Adjusting position */
 }
 
+/* Styling for cost output */
 #cost {
-  margin-right: 460px;
+  margin-right: 460px; /* Adjusting margin */
 }
 
+/* Styling for cost bar */
 .cost-bar {
   display: flex;
   flex-direction: row;
 }
 
-
-/* Copyright styling */
+/* Styling for footer */
 footer {
   position: fixed;
   bottom: 10px;
@@ -204,6 +216,7 @@ footer {
   color: #555;
 }
 
+/* Styling for footer paragraph */
 footer p {
   margin: 0;
 }
